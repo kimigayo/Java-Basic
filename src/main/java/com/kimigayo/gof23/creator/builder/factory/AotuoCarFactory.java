@@ -1,6 +1,7 @@
 package com.kimigayo.gof23.creator.builder.factory;
 
-import creator.builder.component.*;
+
+import com.kimigayo.gof23.creator.builder.component.*;
 
 /**
  * Created by chenbinbin on 2018/2/8.

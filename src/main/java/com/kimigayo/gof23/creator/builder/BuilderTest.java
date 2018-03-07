@@ -1,9 +1,9 @@
 package com.kimigayo.gof23.creator.builder;
 
-import creator.builder.director.AodiCarDirector;
-import creator.builder.director.CarDirector;
-import creator.builder.factory.AotuoCarFactory;
-import creator.builder.product.Car;
+import com.kimigayo.gof23.creator.builder.director.AodiCarDirector;
+import com.kimigayo.gof23.creator.builder.director.CarDirector;
+import com.kimigayo.gof23.creator.builder.factory.AotuoCarFactory;
+import com.kimigayo.gof23.creator.builder.product.Car;
 
 /**建造者模式
  * Created by chenbinbin on 2018/2/7.
