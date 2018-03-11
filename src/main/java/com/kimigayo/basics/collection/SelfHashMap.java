@@ -1,9 +1,13 @@
 package com.kimigayo.basics.collection;
 
+import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * 底层实现-》数组+链表
+ *
  * @param <K>
  * @param <V>
  */
@@ -80,13 +84,20 @@ public class SelfHashMap<K, V> {
     }
 
     public static void main(String[] args) {
-        SelfHashMap<String,String> map = new SelfHashMap<String,String>();
-        map.put("张三","李四");
-        map.put("张三","王五");
-        map.put("张三","李斯");
-        map.put("张一毛","一毛流浪记");
-        System.out.println(map.size);
-        System.out.println(map.get("张三"));
-        System.out.println(map.get("张一毛"));
+//        SelfHashMap<String,String> map = new SelfHashMap<String,String>();
+        Map map = new HashMap<String, String>();
+        map.put("张三", "李四");
+        map.put("张三", "王五");
+        map.put("张三", "李斯");
+        map.put("张一毛", "一毛流浪记");
+        Set<String> set = map.keySet();
+        for (String s : set)
+            System.out.println(map.get(s));
+        Set<Map.Entry<String, String>> entry = map.entrySet();
+        for (Map.Entry<String,String> e:entry){
+            System.out.println(e.getKey()+":"+e.getValue());
+        }
+        //        System.out.println(map.get("张三"));
+//        System.out.println(map.get("张一毛"));
     }
 }
