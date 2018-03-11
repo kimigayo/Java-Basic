@@ -2,7 +2,7 @@ package com.kimigayo.basics.collection;
 
 import java.util.LinkedList;
 
-public class SelfHashMap<K extends Object, V extends Object> {
+public class SelfHashMap<K, V> {
     private LinkedList[] list = new LinkedList[999];
     private int size;
 
