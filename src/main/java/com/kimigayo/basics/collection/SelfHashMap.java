@@ -2,6 +2,11 @@ package com.kimigayo.basics.collection;
 
 import java.util.LinkedList;
 
+/**
+ * 底层实现-》数组+链表
+ * @param <K>
+ * @param <V>
+ */
 public class SelfHashMap<K, V> {
     private LinkedList[] list = new LinkedList[999];
     private int size;

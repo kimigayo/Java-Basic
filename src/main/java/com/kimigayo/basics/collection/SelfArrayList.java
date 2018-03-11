@@ -1,6 +1,8 @@
 package com.kimigayo.basics.collection;
 
-public class SelfArrayList<T> {
+import java.util.Iterator;
+
+public class SelfArrayList<T> implements Iterable<T>{
     private Object[] objects;
     private int size;
 
@@ -44,5 +46,37 @@ public class SelfArrayList<T> {
 
     public int getSize() {
         return size;
+    }
+
+    @Override
+    public Iterator iterator() {
+        return new MyItr();
+    }
+
+    private class MyItr<T> implements Iterator<T>{
+        private int consor=0;
+        private int lastSet=-1;
+
+        @Override
+        public boolean hasNext() {
+            return consor!=size;
+        }
+
+        @Override
+        public T next() {
+            T t = (T) objects[consor];
+            lastSet =consor++;
+            return t;
+        }
+
+        @Override
+        public void remove() {
+            Object[] newObjects = new Object[objects.length];
+            System.arraycopy(objects,0,newObjects,0,objects.length);
+            System.arraycopy(objects,lastSet+1,newObjects,lastSet,size-1);
+            newObjects[size-1]=null;
+            objects=newObjects;
+            size--;
+        }
     }
 }
