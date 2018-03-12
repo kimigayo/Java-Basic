@@ -14,7 +14,7 @@ public class ImmutableListTest {
         list.add("厦门大学");
         list.add("观音山");
         List<String> list1 = ImmutableList.copyOf(list);
-//        list1.add("白鹭洲");
+        list.add("白鹭洲");
         for(String s:list1){
             System.out.println(s);
         }
