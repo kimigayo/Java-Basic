@@ -1,5 +1,6 @@
 package com.kimigayo.basics.collection;
 
+import java.util.Arrays;
 import java.util.Iterator;
 
 public class SelfArrayList<T> implements Iterable<T>{

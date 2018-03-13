@@ -13,7 +13,7 @@ public class CollectionTest {
         map.put("望海路","61号");
         map.put("观日路","20号");
         Map map1 = Collections.synchronizedMap(map);//使map支持线程同步
-        Map map2 = Collections.unmodifiableMap(map);//使map不可修改，Collections设置相当于快照，不够安全
+        Map map2 = Collections.unmodifiableMap(map);//使map不可修改,不安全，仅将值赋给final变量，通过更改原对象值map，可间接更改map2
 //        map2.put("金山路","101号");
         map.put("金山路","101号");
         System.out.println(map.size());

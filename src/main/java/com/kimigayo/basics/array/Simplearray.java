@@ -11,7 +11,7 @@ public class Simplearray {
         int[] a = new int[3];
         int[] b = {1,2,3};
         a[0] = 1;
-        a[1] = 1;
+        a[1] = 2;
         a[2] = 1;
 //        a[3] = 1;//执行报错，编译不报错
 //        for(int k:b){

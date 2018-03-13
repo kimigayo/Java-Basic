@@ -5,6 +5,7 @@ package com.kimigayo.basics.collection.guava;
 import com.google.common.collect.ImmutableList;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ImmutableListTest {
@@ -13,7 +14,7 @@ public class ImmutableListTest {
         list.add("软件园");
         list.add("厦门大学");
         list.add("观音山");
-        List<String> list1 = ImmutableList.copyOf(list);
+        List<String> list1 = ImmutableList.copyOf(list);//ImmutableList其中new 数组
         list.add("白鹭洲");
         for(String s:list1){
             System.out.println(s);
