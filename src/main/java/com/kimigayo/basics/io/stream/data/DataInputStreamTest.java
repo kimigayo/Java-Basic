@@ -13,6 +13,7 @@ public class DataInputStreamTest {
         DataInputStream inputStream = null;
         try {
             inputStream = new DataInputStream(new BufferedInputStream(new FileInputStream(path)));
+            //按顺序取出数据
             System.out.println(inputStream.readDouble() + "\t\t" + inputStream.readLong() + "\t\t" + inputStream.readInt());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
