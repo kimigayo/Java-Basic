@@ -1,4 +1,4 @@
-package com.kimigayo.basics.sort;
+package com.kimigayo.basics.array.sort;
 
 import java.util.ArrayList;
 import java.util.Collections;

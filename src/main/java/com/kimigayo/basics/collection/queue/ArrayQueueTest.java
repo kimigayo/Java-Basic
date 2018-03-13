@@ -1,4 +1,4 @@
-package com.kimigayo.basics.queue;
+package com.kimigayo.basics.collection.queue;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

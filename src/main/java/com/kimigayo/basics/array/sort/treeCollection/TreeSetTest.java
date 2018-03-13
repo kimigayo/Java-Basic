@@ -1,6 +1,5 @@
-package com.kimigayo.basics.sort.treeCollection;
+package com.kimigayo.basics.array.sort.treeCollection;
 
-import java.util.Arrays;
 import java.util.TreeSet;
 
 public class TreeSetTest {

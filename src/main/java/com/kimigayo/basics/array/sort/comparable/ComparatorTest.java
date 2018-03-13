@@ -1,4 +1,4 @@
-package com.kimigayo.basics.sort.comparable;
+package com.kimigayo.basics.array.sort.comparable;
 
 import java.util.Arrays;
 import java.util.Comparator;

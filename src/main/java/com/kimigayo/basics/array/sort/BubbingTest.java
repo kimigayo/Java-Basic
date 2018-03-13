@@ -1,7 +1,6 @@
-package com.kimigayo.basics.sort;
+package com.kimigayo.basics.array.sort;
 
 import java.util.Arrays;
-import java.util.SortedMap;
 
 /**
  * 冒泡排序

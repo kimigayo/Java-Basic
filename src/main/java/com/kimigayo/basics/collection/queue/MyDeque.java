@@ -1,8 +1,7 @@
-package com.kimigayo.basics.queue;
+package com.kimigayo.basics.collection.queue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Queue;
 
 /**
  * 自定义堆栈
