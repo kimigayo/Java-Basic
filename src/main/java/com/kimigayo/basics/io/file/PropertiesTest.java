@@ -1,4 +1,4 @@
-package com.kimigayo.basics.file;
+package com.kimigayo.basics.io.file;
 
 import java.io.*;
 import java.util.Properties;
