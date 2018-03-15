@@ -13,7 +13,7 @@ public class PropertiesTest {
         //项目相对路径
 //        properties.store(new FileOutputStream(new File("src/main/java/com//db.properties")),"db配置");
         //
-        properties.store(new FileOutputStream(new File("src/main/resource/db.properties")),"db配置");
+        properties.store(new FileOutputStream(new File("./db.properties")),"db配置");
         //绝对路径
 //        properties.store(new FileOutputStream(new File("e:/db/db.properties")),"db配置");
 //        properties.storeToXML(new FileOutputStream(new File("src/main/resource/db.xml")),"db配置");
