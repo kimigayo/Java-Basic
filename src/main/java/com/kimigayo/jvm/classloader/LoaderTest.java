@@ -1,5 +1,8 @@
 package com.kimigayo.jvm.classloader;
 
+/**
+ * OSGI加载器，每个bundle都使用一个加载器
+ */
 public class LoaderTest {
     public static void main(String[] args) {
         System.out.println(LoaderTest.class.getClassLoader());
