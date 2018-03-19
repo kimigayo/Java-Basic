@@ -3,7 +3,6 @@ package com.kimigayo.javassist;
 import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtMethod;
-import javassist.NotFoundException;
 import javassist.bytecode.AccessFlag;
 
 import java.lang.reflect.Method;
