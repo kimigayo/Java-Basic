@@ -40,13 +40,13 @@ public class Cat implements Cloneable,Serializable {
         this.name = name;
     }
 
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        Cat o = (Cat) super.clone();
-        //克隆其中的对象属性
-//        o.setBirthDay((Date) this.getBirthDay().clone());
-        return o;
-    }
+//    @Override
+//    protected Object clone() throws CloneNotSupportedException {
+//        Cat o = (Cat) super.clone();
+//        //克隆其中的对象属性
+////        o.setBirthDay((Date) this.getBirthDay().clone());
+//        return o;
+//    }
 
     public Integer getHeight() {
         return height;

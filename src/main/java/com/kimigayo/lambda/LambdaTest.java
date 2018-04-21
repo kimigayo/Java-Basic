@@ -5,7 +5,6 @@ import com.google.common.primitives.Doubles;
 import com.kimigayo.basics.collection.commons.Person;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
