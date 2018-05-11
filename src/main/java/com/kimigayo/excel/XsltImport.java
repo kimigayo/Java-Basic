@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class XsltImport extends AbstractImport{
+public class XsltImport extends AbstractExcelImport{
 
     public <T> List<T> loadImportInfo(InputStream stream, List<ExcelField> excelFields, Class<T> aClass) throws IOException, IllegalAccessException, InstantiationException, NoSuchFieldException {
         List temp = new ArrayList();
@@ -61,26 +61,26 @@ public class XsltImport extends AbstractImport{
         }
     }
 
-    public static void main(String[] args) throws IOException, InstantiationException, IllegalAccessException, NoSuchFieldException {
-        List<ExcelField> excelFields = new ArrayList<>();
-        ExcelField excelField1 = new ExcelField();
-        excelField1.setExField("商户编号");
-        excelField1.setTabField("merchantId");
-        excelField1.setColumn(0);
-        excelFields.add(excelField1);
-        ExcelField excelField2 = new ExcelField();
-        excelField2.setExField("创建时间");
-        excelField2.setTabField("createAt");
-        excelField2.setColumn(1);
-        excelFields.add(excelField2);
-        ExcelField excelField3 = new ExcelField();
-        excelField3.setExField("商户交易号");
-        excelField3.setTabField("merchantDealId");
-        excelField3.setColumn(2);
-        excelFields.add(excelField3);
-        List<Bill> objects = new XsltImport().loadImportInfo(Thread.currentThread().getContextClassLoader().getResourceAsStream("./mch_inlet_refund_export_1524185278.48.xlsx"), excelFields, Bill.class);
-        for (Bill b:objects){
-            System.out.println(b);
-        }
-    }
+//    public static void main(String[] args) throws IOException, InstantiationException, IllegalAccessException, NoSuchFieldException {
+//        List<ExcelField> excelFields = new ArrayList<>();
+//        ExcelField excelField1 = new ExcelField();
+//        excelField1.setExField("商户编号");
+//        excelField1.setTabField("merchantId");
+//        excelField1.setColumn(0);
+//        excelFields.add(excelField1);
+//        ExcelField excelField2 = new ExcelField();
+//        excelField2.setExField("创建时间");
+//        excelField2.setTabField("createAt");
+//        excelField2.setColumn(1);
+//        excelFields.add(excelField2);
+//        ExcelField excelField3 = new ExcelField();
+//        excelField3.setExField("商户交易号");
+//        excelField3.setTabField("merchantDealId");
+//        excelField3.setColumn(2);
+//        excelFields.add(excelField3);
+//        List<Bill> objects = new XsltImport().loadImportInfo(Thread.currentThread().getContextClassLoader().getResourceAsStream("./mch_inlet_refund_export_1524185278.48.xlsx"), excelFields, Bill.class);
+//        for (Bill b:objects){
+//            System.out.println(b);
+//        }
+//    }
 }

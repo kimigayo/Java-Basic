@@ -7,7 +7,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.List;
 
-public abstract class AbstractImport implements IImport {
+public abstract class AbstractExcelImport implements IDocuemntImport {
     protected final static DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     protected final static String STRING = "java.lang.String";
     protected final static String Date = "java.util.Date";

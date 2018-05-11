@@ -6,7 +6,7 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CsvImport extends AbstractImport {
+public class CsvImport extends AbstractExcelImport {
     public <T> List<T> loadImportInfo(String csvPath, List<ExcelField> excelFields, Class<T> aClass){
         List temp = new ArrayList();
         try {
