@@ -6,10 +6,19 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class ExceptionTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         System.out.println(readFile());
+        System.out.println(getException());
     }
 
+    public static String getException() throws FileNotFoundException {
+        try {
+            throw new NullPointerException();
+        }finally {
+//            return "";
+            throw new FileNotFoundException();
+        }
+    }
     public static String readFile() {
         FileInputStream stream = null;
         try {
