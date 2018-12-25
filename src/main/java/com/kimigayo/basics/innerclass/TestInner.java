@@ -13,7 +13,6 @@ public class TestInner {
             System.out.println("Test say "+str);
         }
 
-        @Override
         public int getI() {
             return i;
         }
