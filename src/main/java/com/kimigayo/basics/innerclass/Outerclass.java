@@ -30,6 +30,7 @@ public class Outerclass {
 
         public /*static*/ void run(){
             //可访问外部类私有变量
+            System.out.println(Outerclass.this);
             System.out.println(age);
             System.out.println("NotStatic");
         }
@@ -57,11 +58,14 @@ public class Outerclass {
 class Outter{
     public static void main(String[] args) {
         Outerclass outerclass = new Outerclass();
-//        Outerclass.Innerclass innerclass = outerclass.new Innerclass();
-//        innerclass.run();
-//        Outerclass.StaticInnerclass staticInnerclass = new Outerclass.StaticInnerclass();
-//        staticInnerclass.run();
-//        Outerclass.StaticInnerclass.sRun();
+        Outerclass.Innerclass innerclass = outerclass.new Innerclass("222");
+        innerclass.run();
+        Outerclass.StaticInnerclass staticInnerclass = new Outerclass.StaticInnerclass("222");
+        Outerclass.StaticInnerclass staticInnerclass2 = new Outerclass.StaticInnerclass("222");
+        System.out.println(staticInnerclass);
+        System.out.println(staticInnerclass2);
+        staticInnerclass.run();
+        Outerclass.StaticInnerclass.sRun();
         outerclass.add("张三");
         outerclass.add("李斯");
         outerclass.add("王五");
